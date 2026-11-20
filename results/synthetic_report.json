@@ -1,0 +1,186 @@
+{
+  "data_kind": "SYNTHETIC_ONLY",
+  "seed": 2026,
+  "interpretation": "Software demonstration, not historical sports performance or evidence of profit.",
+  "walk_forward_folds": [
+    {
+      "exclusive_training_cutoff_day": 200,
+      "train_n": 600,
+      "test_n": 150,
+      "first_test_day": 200,
+      "last_test_day": 249
+    },
+    {
+      "exclusive_training_cutoff_day": 250,
+      "train_n": 750,
+      "test_n": 150,
+      "first_test_day": 250,
+      "last_test_day": 299
+    },
+    {
+      "exclusive_training_cutoff_day": 300,
+      "train_n": 900,
+      "test_n": 150,
+      "first_test_day": 300,
+      "last_test_day": 349
+    },
+    {
+      "exclusive_training_cutoff_day": 350,
+      "train_n": 1050,
+      "test_n": 150,
+      "first_test_day": 350,
+      "last_test_day": 399
+    }
+  ],
+  "binary_strength": {
+    "all_model": {
+      "n": 600,
+      "brier": 0.2172891195366181,
+      "log_loss": 0.6246275176807994,
+      "zero_probability_outcomes": 0
+    },
+    "fair_coin_baseline": {
+      "n": 600,
+      "brier": 0.25,
+      "log_loss": 0.6931471805599453,
+      "zero_probability_outcomes": 0
+    },
+    "synthetic_noisy_benchmark_all": {
+      "n": 600,
+      "brier": 0.22653395751080094,
+      "log_loss": 0.6468254975840472,
+      "zero_probability_outcomes": 0
+    },
+    "paired": {
+      "n": 514,
+      "model": {
+        "n": 514,
+        "brier": 0.21803829156867288,
+        "log_loss": 0.6264385663527406,
+        "zero_probability_outcomes": 0
+      },
+      "market": {
+        "n": 514,
+        "brier": 0.22602936572091886,
+        "log_loss": 0.6461539484065022,
+        "zero_probability_outcomes": 0
+      }
+    },
+    "calibration": [
+      {
+        "bin": 1,
+        "n": 20,
+        "predicted": 0.18185507965803235,
+        "observed": 0.2
+      },
+      {
+        "bin": 2,
+        "n": 74,
+        "predicted": 0.2515808460774877,
+        "observed": 0.21621621621621623
+      },
+      {
+        "bin": 3,
+        "n": 103,
+        "predicted": 0.35187099958319873,
+        "observed": 0.3106796116504854
+      },
+      {
+        "bin": 4,
+        "n": 100,
+        "predicted": 0.44310152425223737,
+        "observed": 0.51
+      },
+      {
+        "bin": 5,
+        "n": 110,
+        "predicted": 0.5526915769304591,
+        "observed": 0.5454545454545454
+      },
+      {
+        "bin": 6,
+        "n": 123,
+        "predicted": 0.6517945349842288,
+        "observed": 0.6910569105691057
+      },
+      {
+        "bin": 7,
+        "n": 49,
+        "predicted": 0.7405743805653909,
+        "observed": 0.6326530612244898
+      },
+      {
+        "bin": 8,
+        "n": 21,
+        "predicted": 0.8236741741797512,
+        "observed": 0.8571428571428571
+      }
+    ],
+    "log_loss_difference_all_rows": {
+      "mean_difference": -0.022197979903247855,
+      "clusters": 200,
+      "interval95": [
+        -0.04639151727636739,
+        0.00048638335241791626
+      ]
+    }
+  },
+  "basketball_margin": {
+    "scores": {
+      "n": 600,
+      "brier": 0.22143655442499485,
+      "log_loss": 0.6339664341748197,
+      "zero_probability_outcomes": 0
+    },
+    "caveat": "A simplified team/rest model; excludes production player/minute/clutch components."
+  },
+  "football_example": {
+    "illustrative_rates": [
+      1.55,
+      1.1
+    ],
+    "rho": -0.08,
+    "home_draw_away": [
+      0.46738150166245734,
+      0.27256936902758405,
+      0.26004912930995866
+    ],
+    "discarded_tail_mass": 9.658940314238862e-14
+  },
+  "series_example": {
+    "unit_p": 0.56,
+    "best_of": 11,
+    "iid_probability": 0.6585904206291706,
+    "beta_binomial_probability_kappa20": 0.631424252400431
+  },
+  "risk_examples": [
+    {
+      "paths": 10000,
+      "events": 60,
+      "fraction": 0.1,
+      "max_drawdown_p95": 0.11565599424623303,
+      "exceedance_rate": 0.0,
+      "exceedance_upper95": 0.00029952835977661195,
+      "drawdown_limit": 0.3
+    },
+    {
+      "paths": 10000,
+      "events": 60,
+      "fraction": 0.25,
+      "max_drawdown_p95": 0.27256049669252747,
+      "exceedance_rate": 0.034,
+      "exceedance_upper95": 0.03713337607735263,
+      "drawdown_limit": 0.3
+    },
+    {
+      "paths": 10000,
+      "events": 60,
+      "fraction": 0.5,
+      "max_drawdown_p95": 0.4892538948423704,
+      "exceedance_rate": 0.4292,
+      "exceedance_upper95": 0.4374058897939228,
+      "drawdown_limit": 0.3
+    }
+  ],
+  "environment_policy": "No network access, credentials, production parameters or external integrations are used by the demo."
+}

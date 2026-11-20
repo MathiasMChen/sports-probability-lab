@@ -1,0 +1,3 @@
+# Numerical versions used for the checked-in synthetic report (Python 3.11+).
+numpy==2.3.5
+scipy==1.17.0

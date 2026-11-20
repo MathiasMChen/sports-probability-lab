@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="440" viewBox="0 0 620 440">
+<rect width="620" height="440" fill="#ffffff"/>
+<g font-family="sans-serif" fill="#172e38">
+<text x="55" y="30" font-size="19" font-weight="bold">Walk-forward calibration</text>
+<text x="55" y="51" font-size="12">SYNTHETIC data · binary strength model · bubble area ∝ N</text>
+<path d="M 65.0 85 V 350 M 65 350.0 H 540" stroke="#e1e8eb" fill="none"/>
+<text x="65.0" y="371" text-anchor="middle" font-size="12">0.0</text>
+<text x="52" y="354.0" text-anchor="end" font-size="12">0.0</text>
+<path d="M 160.0 85 V 350 M 65 297.0 H 540" stroke="#e1e8eb" fill="none"/>
+<text x="160.0" y="371" text-anchor="middle" font-size="12">0.2</text>
+<text x="52" y="301.0" text-anchor="end" font-size="12">0.2</text>
+<path d="M 255.0 85 V 350 M 65 244.0 H 540" stroke="#e1e8eb" fill="none"/>
+<text x="255.0" y="371" text-anchor="middle" font-size="12">0.4</text>
+<text x="52" y="248.0" text-anchor="end" font-size="12">0.4</text>
+<path d="M 350.0 85 V 350 M 65 191.0 H 540" stroke="#e1e8eb" fill="none"/>
+<text x="350.0" y="371" text-anchor="middle" font-size="12">0.6</text>
+<text x="52" y="195.0" text-anchor="end" font-size="12">0.6</text>
+<path d="M 445.0 85 V 350 M 65 138.0 H 540" stroke="#e1e8eb" fill="none"/>
+<text x="445.0" y="371" text-anchor="middle" font-size="12">0.8</text>
+<text x="52" y="142.0" text-anchor="end" font-size="12">0.8</text>
+<path d="M 540.0 85 V 350 M 65 85.0 H 540" stroke="#e1e8eb" fill="none"/>
+<text x="540.0" y="371" text-anchor="middle" font-size="12">1.0</text>
+<text x="52" y="89.0" text-anchor="end" font-size="12">1.0</text>
+<path d="M 65 350 L 540 85" stroke="#788b94" stroke-dasharray="5,5" fill="none"/>
+<circle cx="151.38" cy="297.00" r="4.92" fill="#227d85" fill-opacity="0.7"><title>N=20</title></circle>
+<circle cx="184.50" cy="292.70" r="9.46" fill="#227d85" fill-opacity="0.7"><title>N=74</title></circle>
+<circle cx="232.14" cy="267.67" r="11.16" fill="#227d85" fill-opacity="0.7"><title>N=103</title></circle>
+<circle cx="275.47" cy="214.85" r="11.00" fill="#227d85" fill-opacity="0.7"><title>N=100</title></circle>
+<circle cx="327.53" cy="205.45" r="11.54" fill="#227d85" fill-opacity="0.7"><title>N=110</title></circle>
+<circle cx="374.60" cy="166.87" r="12.20" fill="#227d85" fill-opacity="0.7"><title>N=123</title></circle>
+<circle cx="416.77" cy="182.35" r="7.70" fill="#227d85" fill-opacity="0.7"><title>N=49</title></circle>
+<circle cx="456.25" cy="122.86" r="5.04" fill="#227d85" fill-opacity="0.7"><title>N=21</title></circle>
+<text x="302" y="405" text-anchor="middle" font-size="14">Predicted win probability</text>
+<text transform="translate(18 220) rotate(-90)" text-anchor="middle" font-size="14">Observed win frequency</text>
+</g></svg>
